@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> pomodoro clock</title>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script src="script.js"></script>
+ <link rel="stylesheet" href="style.css">
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <!-- Latest compiled and minified JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+ integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body id="bootstrap-overrides">
+<div class="container">
+  <div class="row justify-content-md-center">
+   <div class=" col-md-offset-4 col-md-4">
+     <h2> Pomodoro Clock </h2>
+   </div>
+ </div>
+
+ <div class="row justify-content-md-center">
+  <div class=" col-md-offset-2 col-md-4">
+         <h3> Select Break Time</h3>
+         <button type="button" class="btn btn-default decr"> - </button>
+         <button type="button" class="btn btn-default breakTime" value="5" > 5 </button>
+         <button type="button" class="btn btn-default incr"> + </button>
+  </div>
+  <div class="col-md-4">
+         <h3> Select Session Time</h3>
+         <button type="button" class="btn btn-default decrSession"> - </button>
+         <button type="button" class="btn btn-default sessionTime" value="25" > 25 </button>
+         <button type="button" class="btn btn-default incrSession"> + </button>
+  </div>
+ </div>
+
+    <!-- <div class="row justify-content-md-center"> -->
+      <div class="row justify-content-md-center">
+        <div class="block circle">
+           <p id="timerHeader"> Session </p>
+           <p id="timer"> 25 </p>
+         </div>
+       </div>
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-5">
+       <button type="button" class="btn btn-primary startSession"> START </button>
+       <button type="button" class="btn btn-danger resetSession"> RESET </button>
+     </div>
+   </div>
+</div>
+<audio id="myAudio" src="apple_ring.mp3"></audio>
+
+</body>
+
+</html>
